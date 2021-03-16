@@ -55,7 +55,7 @@ int main(int argc, const char* argv[])
 
     cv::VideoWriter output(
         outputPath.string(),
-        cv::VideoWriter::fourcc('M', 'J', 'P', 'G'),
+        cv::VideoWriter::fourcc('m', 'p', '4', 'v'),
         30,
         cv::Size(width * 2, height));
 
@@ -202,13 +202,13 @@ int main(int argc, const char* argv[])
         cv::cvtColor(outputFrame, outputFrame, cv::COLOR_GRAY2BGR);
         cv::hconcat(frame, outputFrame, display);
 
-        // cv::imshow("result", display);
+        cv::imshow("result", display);
 
         output.write(display);
 
-        //int c = cv::waitKey(1);
-        //if (c == 27)
-        //    break;
+        int c = cv::waitKey(1);
+        if (c == 27)
+            break;
 
         ++frameCount;
     }

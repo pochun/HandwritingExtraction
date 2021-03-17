@@ -1,5 +1,7 @@
 # Extracting Handwriting from Lecture Videos
-This program extracts handwritng on a whiteboard or a chalkboard from a lecture video.
+The aim of this project is to extract handwritng on a whiteboard or a chalkboard from a lecture video.
+The program first extracts a background color and then uses OpenCV morphilogical transformations to extract handwritten lines, curves and texts.
+If a part of handwriting is temperally occluded by people in front of the board, it can be kept in the extraction results.
 
 ## Installation
 ### Prerequisites

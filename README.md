@@ -13,7 +13,7 @@ If a part of handwriting is temperally occluded by people in front of the board,
 ### Build Process
 Clone the project.
 ```
-$ git clone http://git.visualon.com/pchsu/HandwritingExtraction.git
+$ git clone https://github.com/pochun/HandwritingExtraction.git
 ```
 
 Then create build directory
